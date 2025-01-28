@@ -25,7 +25,7 @@ const texts = [
 
 export default function Home() {
     const [icons, setIcons] = useState<React.ReactElement[]>([]);
-    const [amountRange, setAmountRange] = useState([5000, 30000]);
+    const [amountRange, setAmountRange] = useState([10000, 30000]);
     const { push } = useRouter();
 
     useEffect(() => {
@@ -96,7 +96,7 @@ export default function Home() {
                             colorPrimaryBorderHover: '#FF4848',
                         },
                     }}>
-                        <SliderAntd range min={5000} max={30000} step={5000} value={amountRange} onChange={setAmountRange} className="w-full" />
+                        <SliderAntd range min={10000} max={30000} step={5000} value={amountRange} onChange={setAmountRange} className="w-full" />
                     </ConfigProvider>
                     <div className="flex justify-between text-black my-4 w-full font-pacifico text-2xl">
                         <span>{formatCurrency(amountRange[0])} </span>
