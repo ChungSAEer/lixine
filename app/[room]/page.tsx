@@ -198,7 +198,7 @@ export default function PageRandom({
                     </div>
 
                     <button className="absolute font-pacifico bottom-4 w-full text-center text-[#FFD700] font-bold text-xl hover:text-[#FFF7CC] transition-colors" onClick={handleOpenLixi} >
-                        Nhận Lì Xì Ngay
+                        Nhận Lì Xì Ngay (Bấm vào đây)
                     </button>
                 </motion.div>)}
                 <AnimatePresence>
